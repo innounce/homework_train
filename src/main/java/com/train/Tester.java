@@ -7,14 +7,20 @@ public class Tester {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter number of tickets: ");
-        int buy = scanner.nextInt();
-        System.out.println("How many round-trip tickets: ");
-        int roundTrip = scanner.nextInt();
 
-        if(buy > roundTrip){
-            Ticket ticket = new Ticket(buy, roundTrip);
-            ticket.calc();
+        int buy = 0, roundTrip ;
+        while(true){
+            System.out.println("Please enter number of tickets: ");
+            buy = scanner.nextInt();
+            if(buy == -1)
+                break;
+            System.out.println("How many round-trip tickets: ");
+            roundTrip = scanner.nextInt();
+
+            if(buy > roundTrip){
+                Ticket ticket = new Ticket(buy, roundTrip);
+                ticket.calc();
+            }
         }
     }
 }
