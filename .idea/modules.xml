@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/innounce.iml" filepath="$PROJECT_DIR$/.idea/modules/innounce.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/innounce.main.iml" filepath="$PROJECT_DIR$/.idea/modules/innounce.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/innounce.test.iml" filepath="$PROJECT_DIR$/.idea/modules/innounce.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/homework_train.innounce.iml" filepath="$PROJECT_DIR$/.idea/modules/homework_train.innounce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/homework_train.innounce.main.iml" filepath="$PROJECT_DIR$/.idea/modules/homework_train.innounce.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/homework_train.innounce.test.iml" filepath="$PROJECT_DIR$/.idea/modules/homework_train.innounce.test.iml" />
     </modules>
   </component>
 </project>
