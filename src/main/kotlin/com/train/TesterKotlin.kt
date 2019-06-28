@@ -4,8 +4,8 @@ import java.util.*
 
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
-    var buy = 0
-    var roundTrip = 0
+    var buy:Int
+    var roundTrip:Int
     while(true) {
         println("Please enter number of tickets: ")
         buy = scanner.nextInt()
