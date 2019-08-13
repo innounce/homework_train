@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
 //    userInput()
     val stu = Student("Jack", 66, 88)
     stu.Print()
-    println("high scire: ${stu.hightest()}")
+    println("high score: ${stu.hightest()}")
 
 }
 
@@ -16,16 +16,25 @@ fun main(args: Array<String>) {
 class Student(var name: String, var math: Int, var english:Int){
 
     fun Print(){
-        println(name + "\t" + math + "\t" + english + "\t" + (math + english) / 2)
+        println("$name\t$math\t$english\t${getAverage()}\t${passOrFailed()}\t${getGrade()}")
     }
 
-    fun hightest():Int{
-        var max = if(math > english){
-             math
-        }else{
-            english
-        }
-        return max
+    fun passOrFailed() = if( getAverage() >=60 ) "PASS" else "FAILED"
+
+    fun getGrade() = when ( getAverage() ) {
+        in 90..100 -> 'A'
+        in 80..89 -> 'B'
+        in 70..79 -> 'C'
+        in 60..69 -> 'D'
+        else -> 'F'
+    }
+
+    fun getAverage() = (math + english) / 2
+
+    fun hightest() = if(math > english){
+        math
+    }else{
+        english
     }
 }
 

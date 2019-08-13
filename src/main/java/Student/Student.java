@@ -12,7 +12,7 @@ public class Student {
     }
 
     public int hightest(){
-        int max = (math > english)?math:english;
+        int max = (math > english)? math : english ;
 //        if(math > english)
 //            max = math;
 //        else
@@ -23,6 +23,14 @@ public class Student {
 
 
     public void print() {
-        System.out.println(name + "\t" + math + "\t" + english + "\t" + (math+english)/2);
+        System.out.println(name + "\t" + math + "\t" + english + "\t" + getAverage() + "\t" + ((getAverage() >=60 )? "PASS" : "FAILED") );
+        if( getAverage() >=60 )
+            System.out.println( "PASS" );
+        else
+            System.out.println( "FAILED" );
+    }
+
+    private int getAverage() {
+        return (math+english)/2;
     }
 }
