@@ -1,4 +1,4 @@
-package Student
+package com
 
 import java.util.*
 import kotlin.random.Random
