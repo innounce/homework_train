@@ -8,12 +8,13 @@ fun main(args: Array<String>) {
 //    userInput()
     val stu = Student("Jack", 66, 88)
     stu.Print()
+//    stu.getAverage()
     println("high score: ${stu.hightest()}")
 
 }
 
 
-class Student(var name: String, var math: Int, var english:Int){
+class Student(var name: String?, var math: Int, var english:Int){
 
     fun Print(){
         println("$name\t$math\t$english\t${getAverage()}\t${passOrFailed()}\t${getGrade()}")
