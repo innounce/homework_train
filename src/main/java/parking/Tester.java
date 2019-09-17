@@ -12,7 +12,29 @@ import java.util.Date;
 public class Tester {
     public static void main(String[] args) {
 
+        LocalDateTime enter = LocalDateTime.of(2019, 9,17,8,0,0);
+        LocalDateTime leave = LocalDateTime.of(2019, 9,17,10,0,0);
+
+        Car car1 = new Car("AA-0001", enter);
+        car1.setLeave(leave);
+        System.out.println(car1.durationMinute());
+        System.out.println(car1.durationHours());
+
+        LocalDateTime leave2 = LocalDateTime.of(2019, 9,17,10,8,0);
+        car1.setLeave(leave2);
+
+        System.out.println(car1.durationMinute());
+        System.out.println(car1.durationHours());
+
+
         //JAVA8
+//        JAVA8();
+        //JAVA7
+//        JAVA7();
+
+    }
+
+    private static void JAVA8() {
         Instant instant = Instant.now();
         System.out.println(instant);
 
@@ -25,9 +47,6 @@ public class Tester {
         LocalDateTime other = LocalDateTime.of(2019, 9,10,0,11,12);
         System.out.println(other);
         System.out.println(dateTimeFormatter.format(other));
-
-//        JAVA7();
-
     }
 
     private static void JAVA7() {
