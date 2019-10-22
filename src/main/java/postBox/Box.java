@@ -2,8 +2,7 @@ package postBox;
 
 public interface Box {
 
+    boolean validate(float length, float width, int tall);
 
-
-
-    boolean validate(float length, float width, int height);
+    boolean check(float length, float width, int tall);
 }

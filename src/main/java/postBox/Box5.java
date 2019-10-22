@@ -1,15 +1,15 @@
 package postBox;
 
-public class Box3 extends abstractBox {
+public class Box5 extends abstractBox {
 
-    public Box3(Float length, Float width, int tall) {
+    public Box5(Float length, Float width, int tall) {
         super(length, width, tall);
     }
 
     @Override
     public boolean validate(float length, float width, int tall) {
         if(check(length, width, tall)) {
-            System.out.println("Box3");
+            System.out.println("Box5");
             return true;
         }
         return false;
