@@ -17,7 +17,8 @@ public class BoxTester {
         float lengthIn;
         float widthIn;
         int tallIn;
-        do{
+
+        while(true){
             System.out.print("Please enter object's length: ");
             lengthIn = scanner.nextFloat();
             System.out.print("Please enter object's width: ");
@@ -25,14 +26,17 @@ public class BoxTester {
             System.out.print("Please enter object's height: ");
             tallIn = scanner.nextInt();
 
-            for( int i = 0 ; i < list.size() ; i++ ){
-                Box box = list.get(i);
-                if( box.validate(lengthIn, widthIn, tallIn) ){
-                    break;
+            if(!(lengthIn == 0 && widthIn == 0 && tallIn == 0)) {
+                for (int i = 0; i < list.size(); i++) {
+                    Box box = list.get(i);
+                    if (box.validate(lengthIn, widthIn, tallIn)) {
+                        break;
+                    }
                 }
-            }
+            }else
+                break;
 
-        }while ( !(lengthIn == 0 && widthIn == 0 && tallIn == 0) );
+        }
 
     }
 }
